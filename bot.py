@@ -71,11 +71,6 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     
     keyboard = [
         [InlineKeyboardButton(f"⚙️ وضعیت اکانت: {status}", callback_data='1')],
-        [
-            InlineKeyboardButton(f"⬆️ {up} :آپلود",callback_data='1'),
-            InlineKeyboardButton(f"⬇️ {down} :دانلود",callback_data='1',)
-        ],
-        [InlineKeyboardButton(f"{used} :میزان مصرف⏳", callback_data='1')],
         [InlineKeyboardButton(
             f"📡 حجم باقی مانده : {traffic_remaining}", callback_data='1')],
         [InlineKeyboardButton(
